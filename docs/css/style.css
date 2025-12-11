@@ -1,0 +1,268 @@
+/* Tanque Verde High School Swim Records Website */
+
+:root {
+  --tvhs-primary: #2C5F2D;      /* Forest Green */
+  --tvhs-secondary: #C0C0C0;    /* Silver */
+  --tvhs-accent: #4A7C4E;       /* Light Forest Green */
+  --tvhs-dark-green: #1B4332;   /* Dark Forest Green */
+  --bg-light: #f8f9fa;
+  --text-dark: #212529;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--tvhs-primary) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0.75rem !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: var(--tvhs-secondary) !important;
+}
+
+.dropdown-menu {
+  background-color: var(--tvhs-primary);
+  border: none;
+  border-radius: 0 0 8px 8px;
+  margin-top: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.dropdown-item {
+  color: #fff !important;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--tvhs-accent) !important;
+  color: var(--tvhs-secondary) !important;
+}
+
+.dropdown-header {
+  color: var(--tvhs-secondary) !important;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dropdown-divider {
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* Page header */
+.page-header {
+  background: linear-gradient(135deg, var(--tvhs-primary) 0%, var(--tvhs-accent) 100%);
+  color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.page-header h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.page-header .subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
+
+/* Tables */
+.record-table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead {
+  background-color: var(--tvhs-primary);
+  color: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0,51,102,0.05);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0,51,102,0.1);
+}
+
+/* Record holder emphasis */
+.record-holder {
+  font-weight: bold;
+  color: var(--tvhs-accent);
+}
+
+.school-record {
+  background-color: #fffacd;
+  font-weight: bold;
+}
+
+/* Cards */
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card-header {
+  background-color: var(--tvhs-primary);
+  color: white;
+  font-weight: bold;
+}
+
+/* Highlights section */
+.highlight-box {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.highlight-box h3 {
+  color: var(--tvhs-primary);
+  font-weight: bold;
+}
+
+/* Badges */
+.place-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.place-1 { background-color: #FFD700; color: #000; }
+.place-2 { background-color: #C0C0C0; color: #000; }
+.place-3 { background-color: #CD7F32; color: #fff; }
+.place-top10 { background-color: #4CAF50; color: #fff; }
+
+/* Footer */
+footer {
+  background-color: var(--tvhs-primary);
+  color: white;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: var(--tvhs-secondary);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive tables */
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: 0.9rem;
+  }
+  
+  .page-header h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar, footer, .no-print {
+    display: none !important;
+  }
+  
+  .page-header {
+    background: none;
+    color: black;
+    box-shadow: none;
+  }
+  
+  .card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* Event section headings */
+.event-heading {
+  background-color: var(--bg-light);
+  padding: 0.75rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--tvhs-primary);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Time display */
+.time {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+}
+
+/* Loading animation */
+.loading {
+  text-align: center;
+  padding: 3rem;
+}
+
+.loading:after {
+  content: '⏱️';
+  font-size: 3rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

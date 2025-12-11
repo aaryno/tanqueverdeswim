@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180">
+  <!-- Hawk head facing right - green -->
+  <path d="M15 35 
+           Q30 15 70 20 
+           Q100 10 140 18 
+           Q165 15 185 25
+           Q188 30 185 35
+           Q175 32 160 35
+           Q145 33 130 38
+           Q140 42 145 48
+           L125 50
+           Q100 45 70 50
+           L20 60
+           Q10 58 8 65
+           Q5 55 15 35" 
+        fill="#2E7D32"/>
+  
+  <!-- Hawk eye -->
+  <ellipse cx="55" cy="38" rx="8" ry="7" fill="white"/>
+  <ellipse cx="53" cy="38" rx="4" ry="4" fill="#1B4332"/>
+  <circle cx="52" cy="37" r="1.5" fill="white"/>
+  
+  <!-- Grey horizontal bar -->
+  <path d="M8 62 L185 38 Q190 42 185 46 L8 70 Q3 66 8 62" fill="#B0B0B0"/>
+  
+  <!-- Green talon on left -->
+  <path d="M10 72 L2 85 Q0 90 5 87 L15 75" fill="#2E7D32"/>
+  <path d="M18 74 L12 88 Q10 92 15 89 L22 77" fill="#2E7D32"/>
+  
+  <!-- T Letter with silver outline - positioned behind V -->
+  <g>
+    <!-- T outer silver -->
+    <path d="M25 80 L100 80 L100 100 L70 100 L70 170 L55 170 L55 100 L25 100 Z" 
+          fill="#A8A8A8"/>
+    <!-- T inner dark -->
+    <path d="M30 85 L95 85 L95 95 L67 95 L67 165 L58 165 L58 95 L30 95 Z" 
+          fill="#2D2216"/>
+  </g>
+  
+  <!-- V Letter with silver outline - overlapping T -->
+  <g>
+    <!-- V outer silver -->
+    <path d="M75 80 L115 170 L155 80 L175 80 L125 180 L105 180 L55 80 Z" 
+          fill="#A8A8A8"/>
+    <!-- V inner dark -->
+    <path d="M85 85 L115 160 L145 85 L165 85 L125 172 L105 172 L65 85 Z" 
+          fill="#2D2216"/>
+  </g>
+</svg>
